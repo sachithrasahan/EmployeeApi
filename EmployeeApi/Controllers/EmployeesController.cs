@@ -26,7 +26,10 @@ namespace EmployeeApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get() => Ok(await _service.GetEmployeesAsync());
+        public async Task<IActionResult> GetAll()
+        {
+            return Ok(await _service.GetEmployeesAsync());
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)

@@ -9,6 +9,7 @@ namespace EmployeeApi.Mapping
         {
             CreateMap<Employee, EmployeeResponseDto>();
             CreateMap<EmployeeRequestDto, Employee>();
+            CreateMap<EmployeeUpdateRequestDto, Employee>();
         }
     }
 }
